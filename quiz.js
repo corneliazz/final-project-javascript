@@ -5,7 +5,7 @@ import chalk from 'chalk';
 // Begrüßung
 console.log(chalk.magenta.bold.underline('Willkommen zum Quiz!'));
 
-// Fragen erstellen (kann erweitert werden)
+// Array mit Fragen erstellen (kann erweitert werden)
 const questions = [
     {question: 'Woraus besteht ein Diamant?', answer: 'Kohlenstoff'},
     {question: 'Mit wie vielen Figuren startet ein Schachspiel?', answer: '32'},
@@ -18,5 +18,16 @@ const questions = [
     {question: 'Wer entdeckte Penicillin?', answer: 'Alexander Fleming'}
 ];
 
+// forEach geht automatisch durch jedes Element im Array und führt die Funktion für jedes Element aus.
+questions.forEach(function(q, index) {
+  const userAnswer = readlineSync.question(`${index + 1}. ${q.question} `);
+  if (userAnswer.trim() === q.answer) {
+    console.log(chalk.green.bold('Richtig!'));    
+} else {
+    console.log(chalk.red.bold('Falsch!'));
+  }
+});
+
+// Erweiterungen... 
 
 
