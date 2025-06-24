@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 import chalk from 'chalk';
 
 // Begrüßung
-console.log(chalk.magenta.bold.underline('Willkommen zum Quiz!'));
+console.log(chalk.magenta.bold.underline('*** Willkommen zum Quiz! ***'));
 
 // Array mit Fragen erstellen (kann erweitert werden)
 const questions = [
@@ -18,16 +18,20 @@ const questions = [
     {question: 'Wer entdeckte Penicillin?', answer: 'Alexander Fleming'}
 ];
 
+let score = 0;
+
 // forEach geht automatisch durch jedes Element im Array und führt die Funktion für jedes Element aus.
 questions.forEach(function(q, index) {
   const userAnswer = readlineSync.question(`${index + 1}. ${q.question} `);
   if (userAnswer.trim() === q.answer) {
-    console.log(chalk.green.bold('Richtig!'));    
+    console.log(chalk.green.bold('Richtig!\n')); 
+    score++   
 } else {
-    console.log(chalk.red.bold('Falsch!'));
+    console.log(chalk.red.bold(`Falsch! Die Richtige Antwort ist: ${q.answer}\n`));
   }
 });
 
-// Erweiterungen... 
+console.log(chalk.bgCyanBright.bold(`Herzlichen Glückwunsch! Du hast: ${score} von ${questions.length} Punkten`));
+
 
 
