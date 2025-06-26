@@ -1,8 +1,6 @@
 # Quiz
 
-Das Quiz startet mit einer Begrüßungsnachricht.
-
-Die Punktezahl wird auf 0 gesetzt.
+Das Quiz startet mit einer Begrüßungsnachricht und du kannst deinen Spielernamen eingeben.
 
 ## Fragen und Antworten
 
@@ -18,4 +16,13 @@ Es werden 5 zufällige Fragen ausgewählt.
 Nach den 5 Fragen, kann gewählt werden, ob man weiterspielt oder nicht.
 
 Auf Groß- und kleinschreibung muss nicht geachtet werden.
+
+## Mögliche Erweiterungen
+
+- Punkte speichern
+- Kategorien
+- Schwierigkeitesgrade
+- Multiple Choice, Mehrfachantworten
+
+
 

@@ -7,6 +7,10 @@ import { questions } from './questions.js';
 // Begrüßung
 console.log(chalk.magenta.bold.underline('\n *** Willkommen zum Quiz! ***\n'));
 
+// Namen abfragen
+const playerName = readlineSync.question(chalk.cyan('Wie ist dein Name? '));
+console.log(chalk.blueBright(`\nViel Erfolg, ${playerName}!\n`));
+
 
 // Funktion zum Mischen des Arrays
 function shuffle(array) {
@@ -16,7 +20,7 @@ function shuffle(array) {
     }
 }
 
-// Haupt-Quiz-Funktion
+// Quiz-Funktion
 function playQuiz() {
     let score = 0;
 
@@ -35,7 +39,7 @@ function playQuiz() {
     });
 
     // Punkte anzeigen
-    console.log(chalk.yellow.bold(`Du hast ${score} von 5 Punkten erreicht.\n`));
+    console.log(chalk.yellow.bold(`\n${playerName}, du hast ${score} von 5 Punkten erreicht.`));
 }
 
 // Spielschleife
@@ -47,6 +51,6 @@ while (playAgain) {
     const answer = readlineSync.question('Möchtest du noch einmal spielen? (ja/nein): \n');
     if (answer.trim().toLowerCase() !== 'ja') {
         playAgain = false;
-        console.log(chalk.cyan.bold('\nDanke fürs Spielen! Bis zum nächsten Mal!\n'));
+        console.log(chalk.cyan.bold(`\nDanke fürs Spielen, ${playerName}! Bis zum nächsten Mal!\n`));
     }
 }
