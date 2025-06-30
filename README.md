@@ -4,7 +4,7 @@ Das Quiz startet mit einer Begrüßungsnachricht und du kannst deinen Spielernam
 
 ## Fragen und Antworten
 
-Ein Array mit Fragen und Antworten wird erstellt.
+In einer externen Datei befinden sich Fragen und Antworten, die erweitert werden kann.
 
 Für jede richtige Antwort gibt es einen Punkt. Am Ende wird deine Punktzahl ausgegeben.
 
