@@ -4,7 +4,7 @@ Das Quiz startet mit einer Begrüßungsnachricht und du kannst deinen Spielernam
 
 ## Fragen und Antworten
 
-In einer externen Datei befinden sich Fragen und Antworten, die erweitert werden kann.
+In einer externen Datei befinden sich Fragen und Antworten, die erweitert werden können.
 
 Für jede richtige Antwort gibt es einen Punkt. Am Ende wird deine Punktzahl ausgegeben.
 
