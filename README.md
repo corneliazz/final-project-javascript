@@ -1,6 +1,5 @@
 # Terminal-Quiz
 
-````markdown
 🎮 Terminal-Quiz mit Node.js
 
 Willkommen zu einem kleinen interaktiven Quizspiel im Terminal! Dieses Projekt nutzt `readline-sync` für Benutzereingaben und `chalk` für farbige Ausgaben.
@@ -24,7 +23,7 @@ Willkommen zu einem kleinen interaktiven Quizspiel im Terminal! Dieses Projekt n
    ```bash
    git clone <REPO-URL>
    cd <projektverzeichnis>
-````
+
 
 2. Abhängigkeiten installieren:
 
